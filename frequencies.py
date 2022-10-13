@@ -2,6 +2,11 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
-    # Your code goes here
-    return frequencies
+    _dict = {}
+
+    for item in items:
+        if not item in _dict:
+            _dict[item] = 0
+        _dict[item] += 1
+
+    return _dict
